@@ -19,6 +19,7 @@ a {
     text-decoration: none;
     opacity: 0.8;
     color: #fff;
+    cursor: pointer;
 }
 a:hover {
     opacity: 1;
@@ -107,7 +108,7 @@ section:not(.front):nth-child(even) {
 }
 section h3.title {
     text-transform: capitalize;
-    font: bold 32px "open-sans", sans-serif;
+    font: bold 32px "open sans", sans-serif;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -170,8 +171,9 @@ hr {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    box-shadow: 0 3px grey;
 }
 .contact button.btn:hover {
     top:2px;
-    box-shadow: 3px 1px grey;
+    box-shadow: 0 1px grey;
 }
