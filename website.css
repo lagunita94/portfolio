@@ -32,9 +32,23 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 35px 50px 0;
-    animation: 1s fadein 0.5s forwards;
+    animation: 1s fadein 1s forwards;
     opacity: 0;
     color: #fff;
+}
+@media (max-width: 700px){
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+    }
+    header nav {
+        flex-direction: column;
+        justify-content: space-between;
+        height:100px;
+        text-transform: uppercase;
+    }
+
 }
 @keyframes fadein {
     100% {
@@ -48,7 +62,7 @@ header h2 {
 
 header nav {
     display: flex;
-    margin-right: -15px;
+    
 }
 
 header nav li {
@@ -161,7 +175,11 @@ hr {
     font-size: 30px;
     padding: 25px;
 }
-
+@media (max-width:700px){
+    .grid {
+        flex-direction: column;
+    }
+}
 .contact button.btn {
     background-color:blue;
     position: relative;
